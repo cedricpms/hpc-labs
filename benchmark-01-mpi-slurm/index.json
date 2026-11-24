@@ -1,0 +1,34 @@
+{
+  "title": "Benchmark 01: MPI hello, ping-pong and an MPI job under Slurm",
+  "description": "Compile and run MPI programs, measure latency/bandwidth, and run the benchmark as a Slurm batch job.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Hello from every rank",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Latency and bandwidth",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Run it as a Slurm job",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

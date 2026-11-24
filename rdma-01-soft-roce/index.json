@@ -1,0 +1,39 @@
+{
+  "title": "RDMA 01: Soft-RoCE, port state and a state-based health check",
+  "description": "Create a software RDMA device, read port state, run a bandwidth test, and write a health check that catches a down port.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Create the RDMA device",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Read the port like a triage",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Bandwidth test",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "State-based health check",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

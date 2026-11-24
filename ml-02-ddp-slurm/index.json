@@ -1,0 +1,34 @@
+{
+  "title": "ML 02: Distributed training as a Slurm job",
+  "description": "Launch DDP from sbatch with torchrun, map Slurm variables to PyTorch ranks with srun, and read why a job is pending.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "torchrun inside sbatch",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "srun instead of torchrun",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Why is my job pending?",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

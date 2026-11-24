@@ -1,0 +1,35 @@
+{
+  "title": "Storage 01: Network mounts, fstab and automount",
+  "description": "Mount an NFS export, make it survive reboots with _netdev and systemd automount, then diagnose a broken export.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Mount it by hand",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Make it permanent (the safe way)",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Incident: the mount is gone",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh",
+        "background": "step3/background.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

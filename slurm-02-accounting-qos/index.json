@@ -1,0 +1,44 @@
+{
+  "title": "Slurm 02: Accounts, QOS tiers and 'Invalid account'",
+  "description": "Slurm accounting with slurmdbd: fix 'Invalid account', build a 3-tier account tree with QOS priorities, and the default-QOS trap.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Reproduce and fix 'Invalid account'",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Build the 3 tiers",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Create the QOS levels",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "The default-QOS trap",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Put bob in a tier and run a job",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

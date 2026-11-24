@@ -1,0 +1,45 @@
+{
+  "title": "Slurm 01: Inspect, drain, resume and revive a node",
+  "description": "Single-node Slurm cluster: read the real hardware line, run jobs, drain/resume, and fix a node that dropped out.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Read the real hardware",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Submit a batch job",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Drain the node with a reason",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Resume it",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Incident: the node dropped out",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh",
+        "background": "step5/background.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

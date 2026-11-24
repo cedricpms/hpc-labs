@@ -1,0 +1,2 @@
+#!/bin/bash
+sacctmgr -n -P show qos format=name,priority | grep -qx 'admin|100' && sacctmgr -n -P show qos format=name,priority | grep -qx 'power_user|50' && sacctmgr -n -P show qos format=name,priority | grep -qx 'standard|10'
